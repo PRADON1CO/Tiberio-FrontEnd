@@ -1,0 +1,31 @@
+
+.login-background {
+    background-image: url("../assets/backLogin.jpeg"); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.card {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.imgLogin{
+    width: 100px;
+    height: 100px;
+  }
+  
+.text-underline {
+    text-decoration: underline;
+}
+
+.btnEnviar:hover{
+    color: #ff0000 !important;
+    font-weight: 650;
+}
