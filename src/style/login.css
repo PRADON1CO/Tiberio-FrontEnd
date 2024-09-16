@@ -29,3 +29,27 @@
     color: #ff0000 !important;
     font-weight: 650;
 }
+
+
+.password-container {
+    position: relative;
+}
+  
+.iconoOjo {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 19px;
+    cursor: pointer;
+    z-index: 1;
+    transition: font-size 0.1s ease;
+}
+  
+.password-container input {
+    padding-right: 40px; 
+}
+
+.iconoOjo:hover{
+    font-size: 22px;
+}

@@ -62,8 +62,10 @@ const Login = () => {
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className="fw-bold color">Contraseña:</Form.Label>
+                    <div className="password-container">
                     <Form.Control
                       type="password"
+                      id="pass"
                       placeholder="ingrese una contraseña"
                       {...register("password", {
                         required: "El password es obligatorio",
@@ -82,6 +84,9 @@ const Login = () => {
                         },
                       })}
                     />
+                    <i class="bi bi-eye iconoOjo"></i>
+                    </div>
+                    
                   </Form.Group>
                   <Form.Group className="mb-3">
                     <Form.Text className="text-danger">
