@@ -2,6 +2,7 @@ import { Card, Container, Form, Row, Col, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import login from "../../assets/login.png";
 import "../../style/login.css"
+import { useEffect } from "react";
 
 
 const Login = () => {
@@ -10,6 +11,29 @@ const Login = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  useEffect(() => {
+    const pass = document.getElementById("pass");
+    const icon = document.getElementById("eye");
+
+    const togglePasswordVisibility = () => {
+        if (pass.type === "password") {
+          pass.type = "text";
+          icon.classList.remove("bi-eye");
+          icon.classList.add("bi-eye-slash");
+        } else {
+          pass.type = "password";
+          icon.classList.remove("bi-eye-slash");
+          icon.classList.add("bi-eye");
+        }
+      };
+  
+      icon.addEventListener("click", togglePasswordVisibility);
+  
+      return () => {
+        icon.removeEventListener("click", togglePasswordVisibility);
+      };
+  }, []);
 
   const onSubmit = async (usuario) => {
     console.log(usuario);
@@ -63,28 +87,27 @@ const Login = () => {
                   <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className="fw-bold color">Contraseña:</Form.Label>
                     <div className="password-container">
-                    <Form.Control
-                      type="password"
-                      id="pass"
-                      placeholder="ingrese una contraseña"
-                      {...register("password", {
-                        required: "El password es obligatorio",
-                        minLength: {
-                          value: 8,
-                          message: "el minimo es de 8 caracteres",
-                        },
-                        maxLength: {
-                          value: 12,
-                          message: "el maximo es de 15 caracteres",
-                        },
-                        pattern: {
-                          value: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/,
-                          message:
-                            "El password debe contener al menos una letra mayúscula, una letra minúscula y un número",
-                        },
-                      })}
-                    />
-                    <i class="bi bi-eye iconoOjo"></i>
+                      <Form.Control
+                        type="password"
+                        id="pass"
+                        placeholder="ingrese una contraseña"
+                        {...register("password", {
+                          required: "El password es obligatorio",
+                          minLength: {
+                            value: 8,
+                            message: "el minimo es de 8 caracteres",
+                          },
+                          maxLength: {
+                            value: 13,
+                            message: "el maximo es de 13 caracteres",
+                          },
+                          pattern: {
+                            value: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/,
+                            message: "El password debe contener al menos una letra mayúscula, una letra minúscula y un número",
+                          },
+                        })}
+                      />
+                      <i className="bi bi-eye iconoOjo" id="eye"></i>
                     </div>
                     
                   </Form.Group>
