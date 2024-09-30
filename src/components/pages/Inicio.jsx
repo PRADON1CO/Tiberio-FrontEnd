@@ -24,7 +24,7 @@ const Inicio = () => {
       </div>
       <div className="container">
         <h3 className="text-center py-3 text-white">- NEW DROP -</h3>
-        <Row>
+        <Row className="justify-content-center">
             <CardRemera></CardRemera>
             <CardRemera></CardRemera>
             <CardRemera></CardRemera>
