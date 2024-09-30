@@ -1,0 +1,39 @@
+.bannerGradiente{
+    mask-image: linear-gradient(to bottom, 
+    #000000 95%, 
+    transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, 
+           #000000 95%, 
+           transparent 100%);
+}
+
+.imgBanner{
+    
+    object-fit: cover;
+}
+
+.card-img-top-nueva {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.precioTransferencia{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.textTransferencia{
+  font-size: 12px;
+}
+
+.posicionTextPromo {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  text-align: left;
+}
+
+.tamanioTextPromo{
+  font-size: 10px;
+}
