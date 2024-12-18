@@ -1,29 +1,24 @@
-.bannerGradiente{
-    mask-image: linear-gradient(to bottom, 
-    #000000 95%, 
-    transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, 
-           #000000 95%, 
-           transparent 100%);
+.bannerGradiente {
+  mask-image: linear-gradient(to bottom, #000000 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000000 95%, transparent 100%);
 }
 
-.imgBanner{
-    
-    object-fit: cover;
+.imgBanner {
+  object-fit: cover;
 }
 
 .card-img-top-nueva {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
-.precioTransferencia{
+.precioTransferencia {
   font-size: 20px;
   font-weight: 500;
 }
 
-.textTransferencia{
+.textTransferencia {
   font-size: 12px;
 }
 
@@ -34,6 +29,22 @@
   text-align: left;
 }
 
-.tamanioTextPromo{
+.textoCentrado {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.tamanioTextPromo {
   font-size: 10px;
+}
+
+.imgEnvios {
+  width: 75px;
+  height: 75px;
+  transition: transform 0.3s ease;
+}
+
+.imgEnvios:hover {
+  transform: scale(1.2);
 }
