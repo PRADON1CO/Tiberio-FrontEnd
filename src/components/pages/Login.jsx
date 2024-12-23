@@ -117,9 +117,6 @@ const Login = () => {
                       {errors.password?.message}
                     </Form.Text>
                   </Form.Group>
-                  <div>
-                    <p className="text-underline fw-medium btnEnviar">Crear Cuenta</p>
-                  </div>
                   <div className="d-flex justify-content-center">
                     <Button
                       className="bg-dark rounded-0 border-0 btnEnviar px-4"
