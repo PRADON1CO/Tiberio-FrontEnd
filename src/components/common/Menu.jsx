@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from"../../assets/logo3.png"
+import '../../style/menu.css'
 
 const Menu = () => {
   return (
@@ -13,13 +14,13 @@ const Menu = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className="fw-bold text-white">Inicio</Nav.Link>
-              <Nav.Link href="#Guia de talles" className="fw-bold text-white">Guía de talles</Nav.Link>
-              <NavDropdown title={<span className="text-white">Productos</span>} className="fw-bold" id="basic-nav-dropdown">
+              <Nav.Link href="#home" className="fw-bold text-white linksMenu">Inicio</Nav.Link>
+              <Nav.Link href="#Guia de talles" className="fw-bold text-white linksMenu">Guía de talles</Nav.Link>
+              <NavDropdown title={<span className="text-white linksMenu">Productos</span>} className="fw-bold" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Remeras</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#Administrador" className="fw-bold text-white">Administrador</Nav.Link>
-              <Nav.Link href="#Login" className="fw-bold text-white"><i class="bi bi-person fw-bold text-white"></i>Login</Nav.Link>
+              <Nav.Link href="#Administrador" className="fw-bold text-white linksMenu">Administrador</Nav.Link>
+              <Nav.Link href="#Login" className="fw-bold text-white linksMenu"><i class="bi bi-person fw-bold text-white"></i>Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
