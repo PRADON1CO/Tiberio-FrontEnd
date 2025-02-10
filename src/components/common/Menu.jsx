@@ -20,7 +20,7 @@ const Menu = () => {
                 <NavDropdown.Item href="#action/3.1">Remeras</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#Administrador" className="fw-bold text-white linksMenu">Administrador</Nav.Link>
-              <Nav.Link href="#Login" className="fw-bold text-white linksMenu"><i class="bi bi-person fw-bold text-white"></i>Login</Nav.Link>
+              <Nav.Link href="#Login" className="fw-bold text-white linksMenu"><i id="tamanioIconLogin" class="bi bi-person fw-bold text-white "></i>Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

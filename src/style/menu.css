@@ -2,6 +2,10 @@
     text-decoration: none;
 }
 
+#tamanioIconLogin{
+    font-size: 15px !important;
+}
+
 @media (min-width : 992px){
     .linksMenu {
         position: relative;
