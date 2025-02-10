@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import logo from"../../assets/logo3.png"
+import logo from"../../assets/Logo.jpeg"
 import '../../style/menu.css'
 
 const Menu = () => {
@@ -9,7 +9,7 @@ const Menu = () => {
       <Navbar expand="lg" className="bg-black">
         <Container fluid>
           <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo Tiberio" width={120} />
+            <img src={logo} alt="Logo Tiberio" width={150} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
