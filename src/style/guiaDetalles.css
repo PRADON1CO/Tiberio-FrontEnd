@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    width: 100%;    
+}
+
+.imgTalle{
+    width: 100vw;
+}
+
+@media (min-width : 768px) AND (max-width : 991px ){
+    .table-container {
+        width: 75%;       
+    }
+    .imgTalle{
+        width: 50vw;
+    }
+}
+
+@media (min-width : 992px){
+    .table-container {
+        width: 40%;
+    }
+    .imgTalle{
+        width: 40vw;
+    }
+}
