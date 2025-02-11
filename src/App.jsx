@@ -13,8 +13,8 @@ function App() {
     <>
     
       <Menu></Menu>
-      {/* <Inicio></Inicio> */}
-      <Login></Login>
+      <Inicio></Inicio>
+      {/* <Login></Login> */}
       <Footer></Footer>
     </>
   )
