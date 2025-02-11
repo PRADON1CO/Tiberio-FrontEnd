@@ -25,11 +25,33 @@
     text-decoration: underline;
 }
 
-.btnEnviar:hover{
-    color: #3cbbeb !important;
-    font-weight: 750 !important;
-    
-}
+.btnEnviar {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .btnEnviar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .btnEnviar:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .btnEnviar:hover {
+    color: #fff; 
+    font-weight: 600;
+  }
 
 
 .password-container {
