@@ -5,6 +5,7 @@ import GuiaTalles from './components/pages/GuiaTalles';
 import Inicio from './components/pages/Inicio';
 import Login from './components/pages/Login'
 import "bootstrap/dist/css/bootstrap.min.css";
+import Productos from './components/pages/Productos';
 
 
 
@@ -16,7 +17,8 @@ function App() {
       <Menu></Menu>
       {/* <Inicio></Inicio> */}
       {/* <Login></Login> */}
-      <GuiaTalles></GuiaTalles>
+      {/* <GuiaTalles></GuiaTalles> */}
+      <Productos></Productos>
       <Footer></Footer>
     </>
   )
