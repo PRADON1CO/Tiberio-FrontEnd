@@ -1,5 +1,5 @@
 import React from "react";
-import '../../style/guiaDeTalles.css'
+import '../../style/guiaDetalles.css'
 import ImgTalles from'../../assets/imagenIlustrativa.jpeg'
 
 const GuiaTalles = () => {
