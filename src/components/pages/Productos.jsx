@@ -37,7 +37,8 @@ const Productos = () => {
         </Row>
 
         {/* Contenedor de productos */}
-        <Row className="g-4 justify-content-center">
+        <Row className="g-4 justify-content-center justify-content-lg-start justify-content-md-start">
+          <CardRemera></CardRemera>
           <CardRemera></CardRemera>
           <CardRemera></CardRemera>
           <CardRemera></CardRemera>
