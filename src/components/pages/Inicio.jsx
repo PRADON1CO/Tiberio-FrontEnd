@@ -50,7 +50,7 @@ const Inicio = () => {
               alt="imagen de factura de pago"
               className="imgEnvios"
             />
-            <p className="pt-2 text-white">PAGO REALIZADO</p>
+            <p className="pt-2 text-white">PAGO SEGURO</p>
           </Col>
           <Col xs={6} md={6} lg={3}>
             <img
