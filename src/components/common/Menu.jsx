@@ -16,14 +16,13 @@ const Menu = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#home" className="fw-bold text-white linksMenu">Inicio</Nav.Link>
-              <Nav.Link href="#Guia de talles" className="fw-bold text-white linksMenu">Guía de talles</Nav.Link>
-              <NavDropdown title={<span className="text-white linksMenu">Productos</span>} className="fw-bold" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Remeras</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#Administrador" className="fw-bold text-white linksMenu">Administrador</Nav.Link>
-              <Nav.Link href="#Login" className="fw-bold text-white linksMenu"><i id="tamanioIconLogin" class="bi bi-person fw-bold text-white "></i>Login</Nav.Link>
+            <Nav className="ms-auto gap-3">
+              <NavLink to={'/'} className="fw-bold text-white linksMenu">Inicio</NavLink>
+              <NavLink to={'/guia-talles'} className="fw-bold text-white linksMenu">Guía de talles</NavLink>
+              <NavLink to={'/productos'} className="text-white linksMenu fw-bold">Productos
+              </NavLink>
+              <NavLink to={'/administrador'} className="fw-bold text-white linksMenu">Administrador</NavLink>
+              <NavLink to={'/login'} className="fw-bold text-white linksMenu"><i id="tamanioIconLogin" class="bi bi-person fw-bold text-white "></i>Login</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
