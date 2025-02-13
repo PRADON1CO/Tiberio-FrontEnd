@@ -74,7 +74,7 @@ const Inicio = () => {
               alt="imagen de recibir tu compra"
               className="imgEnvios"
             />
-            <p className="pt-2 text-white">RECIBI TU COMPRA</p>
+            <p className="pt-2 text-white">DIRECTO A TU PUERTA</p>
           </Col>
         </Row>
       </div>
