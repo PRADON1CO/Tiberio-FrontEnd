@@ -1,5 +1,5 @@
 import React from "react";
-import publicidad1 from "../../assets/banner.jpeg";
+import publicidad1 from "../../assets/TiberioPublicidad.jpeg";
 import "../../style/inicio.css";
 import { Col, Container, Row } from "react-bootstrap";
 import CardRemera from "../remeras/CardRemera";
