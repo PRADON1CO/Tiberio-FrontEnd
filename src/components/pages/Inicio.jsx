@@ -66,7 +66,7 @@ const Inicio = () => {
               alt="imagen de pedido enviado"
               className="imgEnvios"
             />
-            <p className="pt-2 text-white">PEDIDO ENVIADO</p>
+            <p className="pt-2 text-white">PEDIDO SEGURO</p>
           </Col>
           <Col xs={6} md={6} lg={3}>
             <img
