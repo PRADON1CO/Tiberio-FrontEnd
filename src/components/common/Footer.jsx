@@ -1,20 +1,22 @@
 import React from "react";
-import { Col, Container, NavLink, Row } from "react-bootstrap";
 import logo from "../../assets/Logo.jpeg";
 import '../../style/footer.css'
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
       <div className=" text-center  mt-auto bg-black">
-        <img src={logo} alt="" width={250} className="imgLogo" />
-        <div className="d-md-flex d-lg-flex gap-3 justify-content-center pb-4">
-          <p className="text-white linksFooter">Home</p>
-          <p className="text-white linksFooter">Nosotros</p>
-          <p className="text-white linksFooter">Productos</p>
-          <p className="text-white linksFooter">Login</p>
+        <NavLink>
+          <img src={logo} alt="" width={250} className="imgLogo" />
+        </NavLink>
+        <div className="d-md-flex d-lg-flex gap-4 justify-content-center pb-4">
+          <NavLink className='text-white linksFooter' to={"/"}><p >Inicio</p></NavLink>
+          <NavLink className="text-white linksFooter py-1" to={'/guia-talles'}>Guía De Talles</NavLink>
+          <NavLink className="text-white linksFooter py-1" to={'/productos'}>Productos</NavLink>
+          <NavLink className="text-white linksFooter py-1" to={'/login'}>Login</NavLink>
         </div>
-        <div className="pb-2 d-flex gap-4 justify-content-center">
+        <div className="pb-2 d-flex gap-4 justify-content-center ">
           <p className="text-white btnRedondo">
             <i class="bi bi-instagram"></i>
           </p>

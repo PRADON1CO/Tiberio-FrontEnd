@@ -13,6 +13,7 @@ function App() {
     <>
       <BrowserRouter>
         <Menu></Menu>
+
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/login" element={<Login />} />
@@ -20,6 +21,7 @@ function App() {
           <Route path="/productos" element={<Productos />} />
           <Route path="administrador"></Route>
         </Routes>
+        
         <Footer></Footer>
       </BrowserRouter>
     </>
