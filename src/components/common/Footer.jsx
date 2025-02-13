@@ -11,10 +11,10 @@ const Footer = () => {
           <img src={logo} alt="" width={250} className="imgLogo" />
         </NavLink>
         <div className="d-md-flex d-lg-flex gap-4 justify-content-center pb-4">
-          <NavLink className='text-white linksFooter' to={"/"}><p >Inicio</p></NavLink>
-          <NavLink className="text-white linksFooter py-1" to={'/guia-talles'}>Guía De Talles</NavLink>
-          <NavLink className="text-white linksFooter py-1" to={'/productos'}>Productos</NavLink>
-          <NavLink className="text-white linksFooter py-1" to={'/login'}>Login</NavLink>
+          <NavLink className='text-white linksFooter py-1' to={"/"}><p >Inicio</p></NavLink>
+          <NavLink className="text-white linksFooter py-1" to={'/guia-talles'}><p>Guía De Talles</p> </NavLink>
+          <NavLink className="text-white linksFooter py-1" to={'/productos'}><p>Productos</p></NavLink>
+          <NavLink className="text-white linksFooter py-1" to={'/login'}><p>Login</p></NavLink>
         </div>
         <div className="pb-2 d-flex gap-4 justify-content-center ">
           <p className="text-white btnRedondo">

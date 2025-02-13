@@ -41,6 +41,12 @@ i{
     z-index: 1;
 }
 
+.linksFooter{
+    text-decoration: none !important;
+    color: white !important;
+    border: none !important;
+}
+
 @media (min-width : 992px){
     .linksFooter {
         position: relative;
