@@ -26,6 +26,7 @@ const Footer = () => {
           <p className="text-white btnRedondo">
           <i class="bi bi-whatsapp"></i>
           </p>
+          
         </div>
       </div>
     </>
