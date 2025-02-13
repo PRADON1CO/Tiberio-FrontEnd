@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from"../../assets/Logo.jpeg"
 import '../../style/menu.css'
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -9,7 +10,9 @@ const Menu = () => {
       <Navbar expand="lg" className="bg-black">
         <Container fluid>
           <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo Tiberio" width={150} />
+            <NavLink to={'/'}>
+              <img src={logo} alt="Logo Tiberio" width={150} />
+            </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
