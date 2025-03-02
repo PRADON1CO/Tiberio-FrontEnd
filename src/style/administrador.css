@@ -9,3 +9,19 @@ h1{
 *{
     font-family: "Oswald", sans-serif;
 }
+
+.imgAdministrador{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.btnOpciones{
+    border: 1px solid black;
+}
+
+.btnOpciones:hover{
+    color: white;
+    background-color: black;
+}

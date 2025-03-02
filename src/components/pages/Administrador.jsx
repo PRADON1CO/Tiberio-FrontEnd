@@ -2,6 +2,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import '../../style/administrador.css'
+import ItemRemera from "../remeras/ItemRemera";
 
 
 const Administrador = () => {
@@ -16,19 +17,25 @@ const Administrador = () => {
             </Link>
           </div>
           <hr />
-          <Table responsive bordered hover>
+          <Table responsive bordered className="tabla table-striped">
             <thead>
               <tr className="text-center">
                 <th>Cod</th>
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Talle</th>
+                <th>Stock</th>
                 <th>URL de Imagen</th>
                 <th>Opciones</th>
               </tr>
             </thead>
             <tbody>
-              Item De La Remera
+              <ItemRemera></ItemRemera>
+              <ItemRemera></ItemRemera>
+              <ItemRemera></ItemRemera>
+              <ItemRemera></ItemRemera>
+              <ItemRemera></ItemRemera>
+              
             </tbody>
           </Table>
         </section>
