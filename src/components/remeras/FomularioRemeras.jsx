@@ -325,7 +325,7 @@ const FormularioRemeras = () => {
             </Form.Text>
           </Form.Group>
 
-          <Button type="submit" className="bgVerde border-0">
+          <Button type="submit" className="BackCeleste border-0 rounded-0">
             Guardar
           </Button>
         </Form>
