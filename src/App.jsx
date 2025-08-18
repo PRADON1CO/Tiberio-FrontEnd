@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Productos from "./components/pages/Productos";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Administrador from "./components/pages/Administrador";
+import FormularioRemera from "./components/remeras/FormularioRemera";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/guia-talles" element={<GuiaTalles />} />
           <Route path="/productos" element={<Productos />} />
           <Route path="administrador" element={<Administrador></Administrador>}></Route>
+          <Route path ="/administrador/formulario" element={<FormularioRemera></FormularioRemera>}></Route>
         </Routes>
         
         <Footer></Footer>

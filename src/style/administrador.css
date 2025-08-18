@@ -18,7 +18,7 @@ h1{
 }
 
 .btnOpciones{
-    border: 1px solid black;
+    border: 1px solid black !important;
 }
 
 .btnOpciones:hover{
