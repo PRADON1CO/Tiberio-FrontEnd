@@ -1,44 +1,71 @@
-import React from 'react';
+// import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import EyeIcon from '../common/EyeIcon';
+import CartIcon from '../common/CartIcon';
 
 
-const CardRemera = () => {
+const CardRemera = ({ producto }) => {
+    const navigate = useNavigate();
+    if (!producto) {
+        return (
+            <Col xs={10} md={4} lg={3} className="mb-3 p-0">
+                <Card className='bg-transparent border-0 m-1 text-center'>
+                    <Card.Body>
+                        <Card.Title className="text-white fs-5">Sin datos</Card.Title>
+                        <Card.Text className="text-white">No hay información para mostrar.</Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+        );
+    }
+    const handleDetalle = (e) => {
+        e.stopPropagation();
+        navigate(`/producto/${producto.id}`);
+    };
+    const handleCardClick = (e) => {
+        // Evita que el click en el botón Comprar dispare el detalle
+        if (e.target.closest('.btn-comprar')) return;
+        navigate(`/producto/${producto.id}`);
+    };
+    const handleAgregarCarrito = (e) => {
+        e.stopPropagation();
+        // Aquí puedes agregar la lógica para agregar al carrito
+        alert(`Producto agregado al carrito: ${producto.nombre}`);
+    };
     return (
         <Col xs={10} md={4} lg={3} className="mb-3 p-0">
-        <Card className='bg-transparent border-0 m-1'>
+        <Card className='bg-transparent border-0 m-1' onClick={handleCardClick} style={{ cursor: 'pointer' }}>
           <div>
             <img
-              src="https://acdn.mitiendanube.com/stores/004/700/456/products/26-69c164e241a121372d17292575754422-480-0.webp"
-              alt=""
+              src={producto.imagen}
+              alt={producto.nombre}
               className="card-img-top-nueva"
             />
           </div>
           <Card.Body>
-            <Card.Title className="text-white fs-5">Air Jordan 1 Low</Card.Title>
+            <Card.Title className="text-white fs-5">{producto.nombre}</Card.Title>
             <Card.Text>
               <div className="d-flex justify-content- align-items-center">
-                <span className="text-white fw-medium pe-2">$180.999</span>
-                <span className="bg-info text-white fw-bold py-1 px-2 rounded-0">
-                  -30%
-                </span>
+                <span className="text-white fw-medium pe-2">${producto.precio.toLocaleString()}</span>
               </div>
-              <span className="d-block text-decoration-line-through text-danger">
-                $200.999
-              </span>
-              <p className="precioTransferencia text-white">
-                <span className="textTransferencia">
-                  Con transferencia o depósito bancario
-                </span>
-              </p>
             </Card.Text>
           </Card.Body>
-          <div className="px-3 pb-2">
-            <a
-              to="*"
-              className="btn btn-info text-white  border-0 px-4 rounded-0 fw-medium"
+          <div className="px-3 pb-2 d-flex gap-2">
+            <button
+              onClick={e => e.stopPropagation()}
+              className="btn btn-info text-white border-0 px-4 rounded-0 fw-medium btn-comprar"
             >
               Comprar
-            </a>
+            </button>
+            <button
+              onClick={handleDetalle}
+              className="btn btn-outline-light border-0 px-2 rounded-0 d-flex align-items-center btn-eyeicon"
+              title="Ver detalle"
+              style={{ background: 'transparent' }}
+            >
+              <EyeIcon size={22} color="#0dcaf0" />
+            </button>
           </div>
         </Card>
       </Col>

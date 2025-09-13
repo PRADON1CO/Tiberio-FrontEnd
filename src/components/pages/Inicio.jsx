@@ -10,6 +10,32 @@ import recibeCompra from "../../assets/recibiTuCompra.png";
 
 
 const Inicio = () => {
+  const producto = [
+  {
+    id: 1,
+    nombre: "Air Jordan 1 Low",
+    precio: 180999,
+    imagen: "https://acdn.mitiendanube.com/stores/004/700/456/products/26-69c164e241a121372d17292575754422-480-0.webp"
+  },
+  {
+    id: 2,
+    nombre: "Nike SB Dunk",
+    precio: 150000,
+    imagen: "https://acdn.mitiendanube.com/stores/004/700/456/products/26-69c164e241a121372d17292575754422-480-0.webp"
+  },
+  {
+    id: 3,
+    nombre: "Adidas Originals",
+    precio: 120000,
+    imagen: "https://acdn.mitiendanube.com/stores/004/700/456/products/26-69c164e241a121372d17292575754422-480-0.webp"
+  },
+  {
+    id: 4,
+    nombre: "Remera Básica Negra",
+    precio: 50000,
+    imagen: "https://acdn.mitiendanube.com/stores/004/700/456/products/26-69c164e241a121372d17292575754422-480-0.webp"
+  },
+];
   return (
     <div className="bg-black mainSection">
       <div
@@ -30,10 +56,9 @@ const Inicio = () => {
       <div className="container">
         <h3 className="text-center py-3 text-white">- NEW DROP -</h3>
         <Row className="justify-content-center">
-          <CardRemera></CardRemera>
-          <CardRemera></CardRemera>
-          <CardRemera></CardRemera>
-          <CardRemera></CardRemera>
+          {producto.slice(0, 4).map((prod) => (
+            <CardRemera key={prod.id} producto={prod} />
+          ))}
         </Row>
       </div>
       <div className="container text-center py-3">
