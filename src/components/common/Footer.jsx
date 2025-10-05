@@ -17,13 +17,13 @@ const Footer = () => {
           <NavLink className="text-white linksFooter py-1" to={'/login'}><p>Login</p></NavLink>
         </div>
         <div className="pb-2 d-flex gap-4 justify-content-center ">
-          <p className="text-white btnRedondo">
+          <p className="text-white">
             <i class="bi bi-instagram"></i>
           </p>
-          <p className="text-white btnRedondo">
+          <p className="text-white">
             <i class="bi bi-facebook"></i>
           </p>
-          <p className="text-white btnRedondo">
+          <p className="text-white">
           <i class="bi bi-whatsapp"></i>
           </p>
           

@@ -34,7 +34,7 @@ const CardRemera = ({ producto }) => {
         alert(`Producto agregado al carrito: ${producto.nombre}`);
     };
     return (
-        <Col xs={10} md={4} lg={3} className="mb-3 p-0">
+        <Col xs={6} md={4} lg={3} className="mb-3 p-0">
         <Card className='bg-transparent border-0 m-1' onClick={handleCardClick} style={{ cursor: 'pointer' }}>
           <div>
             <img
@@ -57,14 +57,6 @@ const CardRemera = ({ producto }) => {
               className="btn btn-info text-white border-0 px-4 rounded-0 fw-medium btn-comprar"
             >
               Comprar
-            </button>
-            <button
-              onClick={handleDetalle}
-              className="btn btn-outline-light border-0 px-2 rounded-0 d-flex align-items-center btn-eyeicon"
-              title="Ver detalle"
-              style={{ background: 'transparent' }}
-            >
-              <EyeIcon size={22} color="#0dcaf0" />
             </button>
           </div>
         </Card>

@@ -85,7 +85,6 @@ const DetalleProducto = () => {
               className="d-flex align-items-center gap-2 px-4 py-2 fw-medium"
               onClick={() => alert('Producto agregado al carrito')}
             >
-              <CartIcon size={22} color="white" />
               Agregar al carrito
             </Button>
           </div>
