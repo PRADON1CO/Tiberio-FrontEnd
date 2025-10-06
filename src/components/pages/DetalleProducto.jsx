@@ -1,3 +1,4 @@
+import guiaTalles from '../../assets/guia-talles-tiberio.png';
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import CartIcon from '../common/CartIcon';
@@ -92,6 +93,15 @@ const DetalleProducto = () => {
           <div>
             <h5 className="fw-bold">Descripción</h5>
             <p>{mockProducto.descripcion}</p>
+          </div>
+          <div className="mt-5">
+            <h5 className="fw-bold mb-2">Guía de talles y colores</h5>
+            <p className="mb-3" style={{maxWidth: 600}}>
+              Remera oversized manga corta, confeccionada 100% en algodón 24/1 con cuello redondo ribb, asegurando un calce y calidad excelentes. Estampa en serigrafía en frente y espalda. Cuenta con prelavado y descanso de la tela, evitando que achique al lavarla. Tira de limpieza interna y etiqueta diseñada en alta calidad y composición de la prenda con instrucciones de cuidados.
+            </p>
+            <div className="text-center">
+              <img src={guiaTalles} alt="Guía de talles Tiberio" style={{maxWidth: '100%', height: 'auto', borderRadius: 12, border: '1px solid #eee'}} />
+            </div>
           </div>
         </Col>
       </Row>
