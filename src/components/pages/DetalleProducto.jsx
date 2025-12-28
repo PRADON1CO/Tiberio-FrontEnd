@@ -1,7 +1,6 @@
 import guiaTalles from '../../assets/guia-talles-tiberio.png';
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import CartIcon from '../common/CartIcon';
 
 // Mock de datos de producto
 const mockProducto = {

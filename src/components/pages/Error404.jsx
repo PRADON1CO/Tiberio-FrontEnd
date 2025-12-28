@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Error404 = () => (
 	<div className="container text-center py-5">

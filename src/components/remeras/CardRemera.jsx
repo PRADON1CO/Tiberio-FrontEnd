@@ -1,8 +1,6 @@
 // import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import EyeIcon from '../common/EyeIcon';
-import CartIcon from '../common/CartIcon';
 
 
 const CardRemera = ({ producto }) => {
@@ -19,20 +17,20 @@ const CardRemera = ({ producto }) => {
             </Col>
         );
     }
-    const handleDetalle = (e) => {
-        e.stopPropagation();
-        navigate(`/producto/${producto.id}`);
-    };
+    // const handleDetalle = (e) => {
+    //     e.stopPropagation();
+    //     navigate(`/producto/${producto.id}`);
+    // };
     const handleCardClick = (e) => {
         // Evita que el click en el botón Comprar dispare el detalle
         if (e.target.closest('.btn-comprar')) return;
         navigate(`/producto/${producto.id}`);
     };
-    const handleAgregarCarrito = (e) => {
-        e.stopPropagation();
-        // Aquí puedes agregar la lógica para agregar al carrito
-        alert(`Producto agregado al carrito: ${producto.nombre}`);
-    };
+    // const handleAgregarCarrito = (e) => {
+    //     e.stopPropagation();
+    //     // Aquí puedes agregar la lógica para agregar al carrito
+    //     alert(`Producto agregado al carrito: ${producto.nombre}`);
+    // };
     return (
         <Col xs={6} md={4} lg={3} className="mb-3 p-0">
         <Card className='bg-transparent border-0 m-1' onClick={handleCardClick} style={{ cursor: 'pointer' }}>

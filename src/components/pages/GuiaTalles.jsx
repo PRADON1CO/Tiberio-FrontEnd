@@ -1,4 +1,3 @@
-import React from "react";
 import '../../style/guiaDetalles.css'
 import ImgTalles from'../../assets/imagenIlustrativa.jpeg'
 

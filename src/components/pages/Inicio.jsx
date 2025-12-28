@@ -1,7 +1,6 @@
-import React from "react";
 import publicidad1 from "../../assets/TiberioPublicidad.jpeg";
 import "../../style/inicio.css";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import CardRemera from "../remeras/CardRemera";
 import pagoRealizado from "../../assets/pagoRealizado.png";
 import pedidoEmpaquetado from "../../assets/pedidoEmpaquetado.png";

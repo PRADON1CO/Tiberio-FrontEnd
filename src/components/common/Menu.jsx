@@ -1,16 +1,10 @@
-import React, { useState } from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import CartIcon from './CartIcon';
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from"../../assets/Logo.jpeg"
-import img0 from '../../assets/0.png';
-import img1 from '../../assets/1.png';
-import imgLogo1 from '../../assets/logo1.png';
 import '../../style/menu.css'
 import { NavLink } from "react-router-dom";
 
 const Menu = () => {
 
-  const handleRemove = (id) => {};
   return (
     <>
       <Navbar expand="lg" className="bg-black">

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../style/administrador.css';
 import '../../style/CarritoML.css';
 

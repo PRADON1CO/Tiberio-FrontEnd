@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Table, Modal, Button } from "react-bootstrap";
+import { useState } from "react";
+import { Table, Modal } from "react-bootstrap";
 import '../../style/administrador.css'
 import ItemRemera from "../remeras/ItemRemera";
 import FormularioRemera from "../remeras/FormularioRemera";
